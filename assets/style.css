@@ -1,0 +1,462 @@
+/*  General style */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  font-family: verdana;
+}
+img {
+  max-width: 100%;
+}
+p {
+  line-height: 1.5em;
+}
+html, body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  display: block;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  margin-top: 47px;
+}
+/*  HEADER STYLES */
+header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0px 0px 15px 1px grey; /*uzdedame sesely*/
+  z-index: 9;
+  top: 0;
+  /* width: 100%; */
+  left: 0;
+  background: #fff;
+  right: 0;
+  position: fixed;
+}
+header a {
+  padding: 8px 16px;
+  color: #000000; /* teksto spalva */
+  text-decoration: none; /*nuima pabraukima*/
+  letter-spacing: 4px; /*tarpai tarp raidziu*/
+}
+header a:hover { /*kai uzvedama pele ant a, taikome stilius */
+  background-color: #cccccc; /*fonas*/
+}
+.logo span {
+  font-weight: bold; /*paryskina raides*/
+}
+/*  General style */
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+}
+img {
+  max-width: 100%;
+}
+p {
+  line-height: 1.5;
+}
+a {
+  display: block;
+}
+.container {
+  max-width: 1200px; /*maximalus plotis*/
+  margin: 0 auto; /*iscentruojame containeri*/
+}
+li {
+  font-style: none;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  margin-top: 47px;
+}
+/*  HEADER STYLES */
+header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0px 0px 15px 1px grey; /*uzdedame sesely*/
+  z-index: 9;
+  top: 0;
+  /* width: 100%; */
+  left: 0;
+  background: #fff;
+  right: 0;
+  position: fixed;
+}
+header a {
+  padding: 8px 16px;
+  color: #000000; /* teksto spalva */
+  text-decoration: none; /*nuima pabraukima*/
+  letter-spacing: 4px; /*tarpai tarp raidziu*/
+}
+header a:hover { /*kai uzvedama pele ant a, taikome stilius */
+  background-color: #cccccc; /*fonas*/
+}
+.logo span {
+  font-weight: bold; /*paryskina raides*/
+}
+/*  intro styles*/
+.intro {
+  background-image: url("Architecture.jpg");
+  height: 686px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.intro div {
+  justify-content: center;
+  height: 100%;
+}
+.intro h1 {
+  color: white;
+  font-weight: none;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+.intro h1 span {
+  background-color: rgba(0,0,0,0.7);
+  font-weight: bold;
+  padding: 7px 10px;
+  color: rgba(255,255,255,0.9);
+  opacity: 0.7;
+}
+/* PROJECTS STYLES */
+.items-list ul.flex-container {
+  flex-wrap: wrap; /* padarome, kad nusikeltu i kita eilute elementai kurie netelpa */
+}
+.items-list li {
+  width: 24%;
+  position: relative;
+}
+.items-list li:nth-child(4) ~ li {
+  margin-top: 1%;
+}
+.items-list li > p {
+  position: absolute; /* padarome paragrafa absoliutu jo tevui (.items li) */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 8px;
+}
+.heading-container {
+  padding-top: 70px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.heading-container h2,
+.heading-container h3 {
+  font-weight: normal;
+}
+/* ABOUT STYLES */
+.about-text-container {
+  margin-bottom: 40px;
+}
+section.about .image{
+  margin-bottom: 15px;
+}
+section.about .name{
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+section.about .name h5{
+  font-weight: normal; /* srifto storis normalus */
+}
+section.about .position {
+  margin-bottom: 20px;
+}
+section.about .position h6 {
+  color: silver;
+  font-size: 14px;
+  font-weight: normal;
+}
+section.about .about p{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+section.about img {
+  filter: grayscale(70%);
+}
+.button button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none; /* nuimame melynus borderius nuo buttono kai jy paspaudi */
+  background-color: #f1f1f1;
+  font-size: 15px;
+  cursor: pointer; /* padarome pelyte su pirstu */
+}
+.button button:hover {
+  background: #ccc;
+}
+/* CONTACT STYLES */
+section.contact {
+  margin-bottom: 50px;
+}
+section.contact .input-container {
+  margin-bottom: 20px;
+}
+section.contact .input-container input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  font-size: 15px;
+  padding: 7px;
+}
+section.contact .input-container input::placeholder {
+  color: #777777;
+}
+.button-container button {
+  background: black;
+  color: white;
+  padding: 14px 17px;
+  font-size: 15px;
+  cursor: pointer; /* padarome pelyte su pirstu */
+  text-transform: uppercase; /* Teksta paverciam i didziasias raides*/
+}
+.button-container button:hover {
+  background: #ccc;
+  color: black;
+}
+/* FOOTER STYLES */
+.map iframe {
+  width: 100%; /* padarome ploti 100% tevo plociui */
+  filter: grayscale(70%); /* uzdedam filtra */
+  height: 425px;
+}
+footer {
+  text-align: center; /*lygiuojam teksta per centra*/
+}
+footer a {
+  display: inline; /*kad nenusikeltu nuoroda*/
+}
+.copyright {
+  margin-top: -4px; /* pakeliam i virsu bloka */
+  background: black;
+  color: white;
+  padding: 30px 0;
+}
+
+@media all and ( max-width:1220px ) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media all and ( max-width: 669px ) {
+  .items-list li {
+    width: 49%;
+    margin-bottom: 2%;
+  }
+  .items-list li:nth-child(4) ~ li {
+    margin-top: 0;
+  }
+}
+@media all and ( max-width: 567px ) {
+  nav ul.flex-container {
+    flex-direction: column;
+  }
+  main {
+    margin-top: 109px;
+  }
+}
+@media all and ( max-width: 481px ) {
+  .items-list li {
+    width: 100%;
+  }
+
+}
+/*  intro styles*/
+.intro {
+  background-image: url("Architecture.jpg");
+  height: 686px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.intro div {
+  justify-content: center;
+  height: 100%;
+}
+.intro h1 {
+  color: white;
+  font-weight: none;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+.intro h1 span {
+  background-color: rgba(0,0,0,0.7);
+  font-weight: bold;
+  padding: 7px 10px;
+  color: rgba(255,255,255,0.9);
+  opacity: 0.7;
+}
+/* PROJECTS STYLES */
+.items-list ul.flex-container {
+  flex-wrap: wrap; /* padarome, kad nusikeltu i kita eilute elementai kurie netelpa */
+}
+.items-list li {
+  width: 24%;
+  position: relative;
+}
+.items-list li:nth-child(4) ~ li {
+  margin-top: 1%;
+}
+.items-list li > p {
+  position: absolute; /* padarome paragrafa absoliutu jo tevui (.items li) */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: black;
+  color: white;
+  padding: 8px;
+}
+.heading-container {
+  padding-top: 70px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.heading-container h2,
+.heading-container h3 {
+  font-weight: normal;
+}
+/* ABOUT STYLES */
+.about-text-container {
+  margin-bottom: 40px;
+}
+section.about .image{
+  margin-bottom: 15px;
+}
+section.about .name{
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+section.about .name h5{
+  font-weight: normal; /* srifto storis normalus */
+}
+section.about .position {
+  margin-bottom: 20px;
+}
+section.about .position h6 {
+  color: silver;
+  font-size: 14px;
+  font-weight: normal;
+}
+section.about .about p{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+section.about img {
+  filter: grayscale(70%);
+}
+.button button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none; /* nuimame melynus borderius nuo buttono kai jy paspaudi */
+  background-color: #f1f1f1;
+  font-size: 15px;
+  cursor: pointer; /* padarome pelyte su pirstu */
+}
+.button button:hover {
+  background: #ccc;
+}
+/* CONTACT STYLES */
+section.contact {
+  margin-bottom: 50px;
+}
+section.contact .input-container {
+  margin-bottom: 20px;
+}
+section.contact .input-container input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  font-size: 15px;
+  padding: 7px;
+}
+section.contact .input-container input::placeholder {
+  color: #777777;
+}
+.button-container button {
+  background: black;
+  color: white;
+  padding: 14px 17px;
+  font-size: 15px;
+  cursor: pointer; /* padarome pelyte su pirstu */
+  text-transform: uppercase; /* Teksta paverciam i didziasias raides*/
+}
+.button-container button:hover {
+  background: #ccc;
+  color: black;
+}
+/* FOOTER STYLES */
+.map iframe {
+  width: 100%; /* padarome ploti 100% tevo plociui */
+  filter: grayscale(70%); /* uzdedam filtra */
+  height: 425px;
+}
+footer {
+  text-align: center; /*lygiuojam teksta per centra*/
+}
+footer a {
+  display: inline; /*kad nenusikeltu nuoroda*/
+}
+.copyright {
+  margin-top: -4px; /* pakeliam i virsu bloka */
+  background: black;
+  color: white;
+  padding: 30px 0;
+}
+
+@media all and ( max-width:1220px ) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media all and ( max-width: 669px ) {
+  .items-list li {
+    width: 49%;
+    margin-bottom: 2%;
+  }
+  .items-list li:nth-child(4) ~ li {
+    margin-top: 0;
+  }
+}
+@media all and ( max-width: 567px ) {
+  nav ul.flex-container {
+    flex-direction: column;
+  }
+  main {
+    margin-top: 109px;
+  }
+}
+@media all and ( max-width: 481px ) {
+  .items-list li {
+    width: 100%;
+  }
+
+}
